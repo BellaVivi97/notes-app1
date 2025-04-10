@@ -17,12 +17,16 @@
         </div>
     </header>
 
-    <div class="toolbar">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-regular fa-file"></i> 
-        <i class="fa-solid fa-neuter fa-rotate-by" style="--fa-rotate-angle: 40deg;"></i>
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-    </div>
+    <div id="topbar" class="toolbar">
+        <div class="left">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="right">
+          <i class="fa-regular fa-file"></i>
+          <i class="fa-solid fa-neuter fa-rotate-by" style="--fa-rotate-angle: 40deg;"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
 
     <div class="sortierung" >
         <i class="fa-solid fa-arrow-down-short-wide"> Datum</i>
@@ -35,7 +39,12 @@
             <div class="note">
             <input type="checkbox" id="star1" class="star-checkbox" />
             <label for="star1" class="star"><i class="fa-solid fa-star"></i></label>
-            <p>Beispiel</p>
+            <ul class="checklist">
+                <li><input type="checkbox" checked /> Nudeln</li>
+                <li><input type="checkbox" /> Tomaten</li>
+                <li><input type="checkbox" /> Milch</li>
+                <li><input type="checkbox" /> Muskatnuss</li>
+              </ul>
           </div>
         </a></p>
 
