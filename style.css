@@ -34,6 +34,13 @@ body {
   margin: 10px;
   }
 
+  /* Hover-Effekt */
+ .note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+  background-color: #2a2a2a;
+ }
+
   .note p {
     overflow: hidden;
     text-overflow: ellipsis;
