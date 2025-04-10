@@ -12,12 +12,6 @@ body {
    margin: 20px;
   }
 
-  .icons1 {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-  }
-
   .sortierung {
     display: flex;
     justify-content: flex-end;
@@ -69,4 +63,72 @@ body {
 /* Wenn Checkbox aktiviert ist → goldener Stern */
 .star-checkbox:checked + .star {
   color: gold;
+}
+
+
+h1, .titel {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Checkliste */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+}
+
+/* Checkboxen */
+.checklist input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: white;
+}
+
+/* Icons unten */
+.toolbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.toolbar i {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.toolbar i:hover {
+  transform: scale(1.2);
+}
+
+#border {
+  border: solid 1px rgb(71, 69, 69);
+  background-color: #222;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.sortierung1 {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 30px;
+  
+}
+
+#box {
+  background-color: #222;
+  height: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
